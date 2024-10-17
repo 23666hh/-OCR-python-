@@ -1,22 +1,8 @@
 {
-    "start": [
-        1365,
-        301
-    ],
-    "end": [
-        1706,
-        368
-    ],
-    "rectangle": [
-        1365,
-        301,
-        1706,
-        368
-    ],
-    "draw": [
-        1521,
-        811
-    ],
+    "start": null,
+    "end": null,
+    "rectangle": null,
+    "draw": null,
     "buttons": {
         "button1": null,
         "button2": null,
