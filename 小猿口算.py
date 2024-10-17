@@ -13,6 +13,9 @@ import sys
 
 import time
 
+# 导入OCR安装路径，如果设置了系统环境，就可以不用设置了
+# pytesseract.pytesseract.tesseract_cmd = r"D:\Program Files\Tesseract-OCR\tesseract.exe"
+
 # 定义一个标志变量来控制主循环的退出
 exit_program = False
 
