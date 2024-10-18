@@ -29,9 +29,8 @@
 
 
 
-先上战绩
 ![](https://github.com/23666hh/XiaoYuanKouSuan_auto/blob/main/image/fastest.png)  
-
+</p>
 
 
 ## 目录
