@@ -1,19 +1,14 @@
 from screen_selector import ScreenSelector
-
 from pynput.mouse import Button, Controller
 from pynput.keyboard import Listener
-
 import mss
 import numpy as np
-
 import cv2
 import pytesseract
-
 import sys
-
 import time
 
-# 导入OCR安装路径，如果设置了系统环境，就可以不用设置了
+# 导入tesseract安装路径，如果设置了系统环境，就可以不用设置了
 # pytesseract.pytesseract.tesseract_cmd = r"D:\Program Files\Tesseract-OCR\tesseract.exe"
 
 # 定义一个标志变量来控制主循环的退出
