@@ -74,7 +74,7 @@
 方法二：使用系统解释器（建议使用）  
 新建界面点击**自定义环境**，点击**选择现有**  
 ![](https://github.com/23666hh/XiaoYuanKouSuan_auto/blob/main/image/new1.png)  
-解压项目包把里面的`requirements.txt`、`screen_selector.py`、`小猿口算.py`复制到新建项目里（如果是虚拟解释器注意别放错在**.venv**文件夹里），打开终端（左边栏倒数第三个），输入下面命令安装依赖
+解压项目包把里面的`requirements.txt`、`screen_selector.py`、`小猿口算.py`复制到新建项目里（如果是虚拟解释器注意别放错在**\.venv**文件夹里），打开终端（左边栏倒数第三个），输入下面命令安装依赖
 
 ```sh
 pip install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
