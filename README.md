@@ -91,7 +91,7 @@ pip install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
 
 模拟器先移动到合适的位置（建议靠屏幕右侧），运行`小猿口算.py`，第一次运行会生成配置文件，**程序强制退出快捷键是 `-`（减号）**
 
-**鼠标移动到识别区域的一个角上，按下左键往对角方向拖动松开结束（就是选截屏区域，四个角都可以），退出按Esc（选错了左键不要松开，直接按Esc退出）**
+**鼠标移动到识别区域的一个角上，按下左键往对角方向拖动松开结束（就是选截屏区域，四个角都可以），退出按 `Esc` （选错了左键不要松开，直接按 `Esc` 退出）**
 
 ![](https://github.com/23666hh/XiaoYuanKouSuan_auto/blob/main/image/select.gif)
 选区后会自动识别，第一次还需录入模拟输入的位置点
@@ -132,16 +132,16 @@ selector.screenshot(字典键)  // 截屏
 
 ```
 root
-│  ├── /image/				# 相关图片
+│  ├── /image/				     # 相关图片
 │  │  ├── fastest.png
 │  │  ├── new.png
 │  │  └── new1.png
-├── LICENSE					# 软件许可证
-├── README.md				# 本项目的说明文件
-├── requirments.txt			# Python项目依赖文件
-├── screen_selector.py		# 屏幕选择工具
-├── selection_config.json	# 配置文件
-└── 小猿口算.py				# 主程序
+├── LICENSE                # 软件许可证
+├── README.md              # 本项目的说明文件
+├── requirments.txt        # Python项目依赖文件
+├── screen_selector.py     # 屏幕选择工具
+├── selection_config.json  # 配置文件
+└── 小猿口算.py				     # 主程序
 ```
 
 
