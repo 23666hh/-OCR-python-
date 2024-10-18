@@ -28,7 +28,11 @@
   </p>
 
 
-</p>
+
+先上战绩
+![](https://github.com/23666hh/XiaoYuanKouSuan_auto/blob/main/image/fastest.png)  
+
+
 
 ## 目录
 
@@ -48,6 +52,7 @@
 
 
 ### 上手指南
+
 
 
 ###### 开发前的配置要求
@@ -93,7 +98,7 @@ pip install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
 
 **鼠标移动到识别区域的一个角上，按下左键往对角方向拖动松开结束（就是选截屏区域，四个角都可以），退出按 `Esc` （选错了左键不要松开，直接按 `Esc` 退出）**
 
-![](https://github.com/23666hh/XiaoYuanKouSuan_auto/blob/main/image/select.gif)
+![](https://github.com/23666hh/XiaoYuanKouSuan_auto/blob/main/image/select.gif)  
 选区后会自动识别，第一次还需录入模拟输入的位置点
 
 **鼠标移动到绘画框中心，右键点击选中，中键点击退出（选错了只要中键没点击是不会退出的，再点右键更新点就行）**
