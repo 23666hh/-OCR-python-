@@ -1,6 +1,6 @@
 from screen_selector import ScreenSelector
 from pynput.mouse import Button, Controller
-from pynput.keyboard import Listener
+from pynput.keyboard import KeyCode, Listener
 import mss
 import numpy as np
 import cv2
@@ -167,9 +167,17 @@ def click_button(button, sleep):
 
 def on_press(key):
     global exit_program
-    if key.char == '-':
-        print("按下 '-' 键，程序将退出。")
-        exit_program = True
+    # 检查 key 是否是 KeyCode 对象
+    if isinstance(key, KeyCode):
+        # 处理普通字符按键
+        if key.char == '-':
+            print("按下 '-' 键，程序将退出。")
+            exit_program = True
+        else:
+            print("退出请按 '-' 键")
+    else:
+        # 忽略 Key 对象
+        print("退出请按 '-' 键")
 
 
 def main():
