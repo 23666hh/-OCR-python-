@@ -105,8 +105,8 @@ pip install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
 录入后自动识别并模拟输入，**鼠标放开不要移动**，如果一直判断出错用减号退出并增加main函数里的停顿时间，后续再慢慢加快
 
 ```python
-// time.sleep(0.008)
-time.sleep(0.1)
+time.sleep(0.008)  # 每道题暂停时间（练习场）
+# time.sleep(0.3)  # 每道题暂停时间（PK场）
 ```
 
 下次重新打开模拟器会变位置，打开配置文件`selection_config.json`，把`rectangle`的值改为null（`"rectangle": null`）或直接删掉，运行`小猿口算.py`重新录入配置信息
