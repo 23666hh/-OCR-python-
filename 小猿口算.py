@@ -32,11 +32,13 @@ def capture_region(x, y, width, height):
 
 # 识别
 def recognize_numbers(image):
-    numbers = []
+    numbers = []  # 初始化一个空列表来存储结果数字
+
     gray = cv2.cvtColor(image, cv2.COLOR_BGRA2GRAY)
     _, thresh = cv2.threshold(gray, 150, 255, cv2.THRESH_BINARY)
     text = pytesseract.image_to_string(thresh, config='--psm 6')
     print(f"识别结果: {text}")
+
     # 提取数字
     for i in text.split():
         digits = [char for char in i if char.isdigit()]
@@ -173,7 +175,7 @@ def on_press(key):
 def main():
     last_number = 0
 
-    selector.run()
+    selector.run()  # 屏幕选取器启动
 
     try:
         start_x = selector.selection['rectangle'][0]
@@ -181,7 +183,7 @@ def main():
         width = selector.selection['rectangle'][2] - selector.selection['rectangle'][0]
         height = selector.selection['rectangle'][3] - selector.selection['rectangle'][1]
     except Exception as e:
-        sys.exit(f"强制退出发生错误：{e}")
+        sys.exit(f"配置文件读取发生错误（请检查配置文件里rectangle的值是否为4个）：\n{e}")
 
     # 启动键盘监听器，非阻塞方式
     listener = Listener(on_press=on_press)
@@ -198,10 +200,14 @@ def main():
             print("当前数字或与上一次数字相同，跳过本次循环")
             continue
         last_number = number
+        if len(number) < 2:
+            print("当前数字不足，跳过本次循环")
+            continue
         judge_size(number)  # 判断大小
 
-        time.sleep(0.008)  # 防止答题太快上一题未消失
-    sys.exit()
+        time.sleep(0.008)  # 每道题暂停时间（练习场）
+        # time.sleep(0.3)  # 每道题暂停时间（PK场）
+    sys.exit("------------------------------强制退出------------------------------")
 
 
 if __name__ == "__main__":
