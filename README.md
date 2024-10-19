@@ -91,6 +91,8 @@ pip install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
 
 下次重新打开模拟器会变位置，打开生成的配置文件`selection_config.json`，把`rectangle`的值改为null（`"rectangle": null`）或直接删掉，运行`小猿口算.py`重新录入配置信息
 
+程序会一直循环，要退出按 `-`（减号）
+
 ###### 详细使用说明
 
 模拟器先移动到合适的位置（建议靠屏幕右侧），运行`小猿口算.py`，第一次运行会生成配置文件，**程序强制退出快捷键是 `-`（减号）**
